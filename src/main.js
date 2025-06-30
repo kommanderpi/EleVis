@@ -4,9 +4,10 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import * as d3 from "d3";
 
 /* ── constants ────────────────────────────────────────────────────────── */
-const staticPath  = "/";
+const staticPath = import.meta.env.BASE_URL;
 const meshFolder  = "mesh_frames_";
 const dwellRadius = 0.034;  // average step distance from centroidA data
+
 const customEdges = [
   ["elephant_Trunk4_bone", "elephant_Snout_bone"],
   ["elephant_Trunk2_bone", "elephant_Trunk4_bone"],
