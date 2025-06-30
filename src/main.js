@@ -740,11 +740,11 @@ function init(skelCSV, trackCSV, collCSV, hierarchy, ts) {
     const cylMat = new THREE.MeshBasicMaterial({
       color: 0xffa500,          // orange
       transparent: true,
-      opacity: 0
+      opacity: 0.001
     });
 
     dwellZones.forEach(({ centroid: [x, z], radius }) => {
-      const height = 0;  // adjust if needed to barely lift above the ground
+      const height = 0.01;  // adjust if needed to barely lift above the ground
       const g = new THREE.CylinderGeometry(radius, radius, height, 32);
       const m = new THREE.Mesh(g, cylMat);
       m.position.set(x, height / 2, z); // sits perfectly on ground (y = half height)
