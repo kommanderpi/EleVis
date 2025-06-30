@@ -740,7 +740,7 @@ function init(skelCSV, trackCSV, collCSV, hierarchy, ts) {
     const cylMat = new THREE.MeshBasicMaterial({
       color: 0xffa500,          // orange
       transparent: true,
-      opacity: 0.1
+      opacity: 0
     });
 
     dwellZones.forEach(({ centroid: [x, z], radius }) => {
