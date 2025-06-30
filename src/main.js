@@ -744,7 +744,7 @@ function init(skelCSV, trackCSV, collCSV, hierarchy, ts) {
     });
 
     dwellZones.forEach(({ centroid: [x, z], radius }) => {
-      const height = 4;  // adjust if needed to barely lift above the ground
+      const height = 0;  // adjust if needed to barely lift above the ground
       const g = new THREE.CylinderGeometry(radius, radius, height, 32);
       const m = new THREE.Mesh(g, cylMat);
       m.position.set(x, height / 2, z); // sits perfectly on ground (y = half height)
