@@ -5,7 +5,7 @@
   <title>Elephant Visualizer</title>
   <style>
     body{background:#111;color:#ddd;font-family:sans-serif;padding:1em}
-    svg{border:1px solid #444;background:#fff;display:block;margin-bottom:20px}
+    svg{background:#fff;display:block;margin-bottom:20px}
     label{display:inline-block;margin-right:10px}
     input[type="range"]{width:200px;vertical-align:middle}
     #popup3d{z-index:9999}
@@ -16,15 +16,16 @@
   <script type="module" crossorigin src="/EleVis/assets/index-DKguQPYz.js"></script>
 </head>
 <body>
-  <h2>Elephant Skeleton &amp; Collision Visualizer - use this dataset for now: 20250626_094312</h2>
+  <h2>Elephant Skeleton &amp; Collision Visualizer – use this dataset for now: 20250701_113425</h2>
   <div>
-    <label for="stepSlider">Hull Step:</label>
+    <label for="stepSlider">
+      <strong>Hull Step</strong> – Click the <span style="color:red;">RED BLOCKS</span> to jump to highlighted interactions:
+    </label>
     <input type="range" id="stepSlider" min="0" max="0" step="1" value="0">
     <span id="stepValue">0</span>
   </div>
-
   <div>
-    <label for="skeletonSlider">Skeleton Step:</label>
+    <label for="skeletonSlider"><strong>Skeleton Step:</strong></label>
     <input type="range" id="skeletonSlider" min="1" max="50" step="1" value="5">
     <span id="skeletonValue">5</span>
   </div>
